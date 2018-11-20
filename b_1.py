@@ -5,31 +5,35 @@ class Customer:
         self.toshi = age
 
     def full_name(self):
-        print(self.first_name + self.family_name)
+        return self.first_name + self.family_name
 
     def age(self):
         toshi = self.toshi
-        print(toshi)
+        return toshi
 
     def entry_fee(self):
         if self.toshi < 20:
-            print(1000)
+            return 1000
         elif 60 > self.toshi >= 20:
-            print(1500)
+            return 1500
         elif self.toshi >= 65:
-            print(1200)
-
+            return 1200
 
 
 ken = Customer('Ken', 'Tanaka', 15)
-ken.full_name()
-ken.age()
-ken.entry_fee()
+print(f'{ken.full_name()}, {ken.age()}, {ken.entry_fee()}')
+# ken.full_name()
+# ken.age()
+# ken.entry_fee()
+
 tom = Customer('Tom', 'Ford', 57)
+print(f'{tom.full_name()}, {tom.age()}, {tom.entry_fee()}')
 tom.full_name()
 tom.age()
 tom.entry_fee()
+
 ieyasu = Customer('Ieyasu', 'Tokugawa', 73)
+print(f'{ieyasu.full_name()}, {ieyasu.age()}, {ieyasu.entry_fee()}')
 ieyasu.full_name()
 ieyasu.age()
 ieyasu.entry_fee()
