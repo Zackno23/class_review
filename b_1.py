@@ -11,13 +11,25 @@ class Customer:
         toshi = self.toshi
         print(toshi)
 
+    def entry_fee(self):
+        if self.toshi < 20:
+            print(1000)
+        elif 60 > self.toshi >= 20:
+            print(1500)
+        elif self.toshi >= 65:
+            print(1200)
+
+
 
 ken = Customer('Ken', 'Tanaka', 15)
 ken.full_name()
 ken.age()
+ken.entry_fee()
 tom = Customer('Tom', 'Ford', 57)
 tom.full_name()
 tom.age()
+tom.entry_fee()
 ieyasu = Customer('Ieyasu', 'Tokugawa', 73)
-tom.full_name()
+ieyasu.full_name()
 ieyasu.age()
+ieyasu.entry_fee()
