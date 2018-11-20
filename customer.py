@@ -2,10 +2,10 @@ class Customer:
     def __init__(self, first_name, family_name, age):
         self.first_name = first_name
         self.family_name = family_name
-        self.toshi = age
+        self.years_old = age
 
     def full_name(self):
-        return self.first_name + self.family_name
+        return self.first_name + ' ' + self.family_name
 
     def age(self):
         years_old = self.years_old
@@ -23,12 +23,15 @@ class Customer:
         elif self.years_old >= 65:
             return 1200
 
+    def print(self):
+        print(f"{self.full_name()}, {self.age()}, {self.entry_fee()}")
+
 
 ken = Customer('Ken', 'Tanaka', 15)
-print(f'{ken.full_name()}, {ken.age()}, {ken.entry_fee()}')
+ken.print()
 
 tom = Customer('Tom', 'Ford', 57)
-print(f'{tom.full_name()}, {tom.age()}, {tom.entry_fee()}')
+tom.print()
 
 ieyasu = Customer('Ieyasu', 'Tokugawa', 73)
-print(f'{ieyasu.full_name()}, {ieyasu.age()}, {ieyasu.entry_fee()}')
+ieyasu.print()
