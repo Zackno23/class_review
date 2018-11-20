@@ -26,18 +26,9 @@ class Customer:
 
 ken = Customer('Ken', 'Tanaka', 15)
 print(f'{ken.full_name()}, {ken.age()}, {ken.entry_fee()}')
-# ken.full_name()
-# ken.age()
-# ken.entry_fee()
 
 tom = Customer('Tom', 'Ford', 57)
 print(f'{tom.full_name()}, {tom.age()}, {tom.entry_fee()}')
-tom.full_name()
-tom.age()
-tom.entry_fee()
 
 ieyasu = Customer('Ieyasu', 'Tokugawa', 73)
 print(f'{ieyasu.full_name()}, {ieyasu.age()}, {ieyasu.entry_fee()}')
-ieyasu.full_name()
-ieyasu.age()
-ieyasu.entry_fee()
