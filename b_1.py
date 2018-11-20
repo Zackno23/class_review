@@ -12,7 +12,11 @@ class Customer:
         return toshi
 
     def entry_fee(self):
-        if self.toshi < 20:
+        if self.toshi <= 3:
+            return 0
+        elif self.toshi >= 75:
+            return 500
+        elif self.toshi < 20:
             return 1000
         elif 60 > self.toshi >= 20:
             return 1500
