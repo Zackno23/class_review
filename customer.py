@@ -8,19 +8,19 @@ class Customer:
         return self.first_name + self.family_name
 
     def age(self):
-        toshi = self.toshi
-        return toshi
+        years_old = self.years_old
+        return years_old
 
     def entry_fee(self):
-        if self.toshi <= 3:
+        if self.years_old <= 3:
             return 0
-        elif self.toshi >= 75:
+        elif self.years_old >= 75:
             return 500
-        elif self.toshi < 20:
+        elif self.years_old < 20:
             return 1000
-        elif 60 > self.toshi >= 20:
+        elif 60 > self.years_old >= 20:
             return 1500
-        elif self.toshi >= 65:
+        elif self.years_old >= 65:
             return 1200
 
 
