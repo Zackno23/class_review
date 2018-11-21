@@ -24,7 +24,7 @@ class Customer:
             return 1200
 
     def print(self):
-        print(f"{self.full_name()}, {self.age()}, {self.entry_fee()}")
+        print(self.full_name(), self.age(), self.entry_fee(), sep=' ')
 
 
 ken = Customer('Ken', 'Tanaka', 15)
